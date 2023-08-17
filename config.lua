@@ -114,7 +114,7 @@ Config.RestrictedChannels = {
     },
 }
 
-Config.MaxFrequency = 500
+Config.MaxFrequency = 999
 
 Config.messages = {
     ["not_on_radio"] = "You're not connected to a signal",
@@ -128,4 +128,14 @@ Config.messages = {
     ['decrease_radio_volume'] = 'The radio is already set to maximum volume',
     ['increase_radio_volume'] = 'The radio is already set to the lowest volume',
     ['increase_decrease_radio_channel'] = 'New channel ',
+}
+
+-- Added 08/17/2023 -rikmyr
+Config.Debug = true
+
+Config.KeyMapping = {
+    IncreaseRadioChannel = 'UP',
+    DecreaseRadioChannel = 'DOWN',
+    IncreaseRadioChannelDecimal = 'LEFT',
+    DecreaseRadioChannelDecimal = 'RIGHT'
 }
