@@ -264,7 +264,9 @@ RegisterNetEvent('qb-radio:client:JoinRadioChannel1', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
             local channel = 1
+            RadioChannel = channel
             exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
             else
@@ -280,7 +282,9 @@ RegisterNetEvent('qb-radio:client:JoinRadioChannel2', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
             local channel = 2
+            RadioChannel = channel
             exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
             else
@@ -297,7 +301,9 @@ RegisterNetEvent('qb-radio:client:JoinRadioChannel3', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
             local channel = 3
+            RadioChannel = channel
             exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
             else
@@ -313,7 +319,9 @@ RegisterNetEvent('qb-radio:client:JoinRadioChannel4', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
             local channel = 4
+            RadioChannel = channel
             exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
             else
@@ -329,7 +337,9 @@ RegisterNetEvent('qb-radio:client:JoinRadioChannel5', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
             local channel = 5
+            RadioChannel = channel
             exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
             else
@@ -345,7 +355,9 @@ RegisterNetEvent('qb-radio:client:JoinRadioChannel6', function(channel)
     QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
         if radio then
             local channel = 6
+            RadioChannel = channel
             exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
             if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
                 QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
             else
@@ -357,3 +369,130 @@ RegisterNetEvent('qb-radio:client:JoinRadioChannel6', function(channel)
     end)
 end)
 
+RegisterNetEvent('qb-radio:client:JoinRadioChannel7', function(channel)
+    QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
+        if radio then
+            local channel = 7
+            RadioChannel = channel
+            exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
+            if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
+                QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
+            else
+                QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. '.00 MHz', 'success')
+            end
+        elseif not radio then
+            QBCore.Functions.Notify(Config.messages['invalid_radio'], 'error')
+        end
+    end)
+end)
+
+RegisterNetEvent('qb-radio:client:JoinRadioChannel8', function(channel)
+    QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
+        if radio then
+            local channel = 8
+            RadioChannel = channel
+            exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
+            if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
+                QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
+            else
+                QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. '.00 MHz', 'success')
+            end
+        elseif not radio then
+            QBCore.Functions.Notify(Config.messages['invalid_radio'], 'error')
+        end
+    end)
+end)
+
+RegisterNetEvent('qb-radio:client:JoinRadioChannel9', function(channel)
+    QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
+        if radio then
+            local channel = 9
+            RadioChannel = channel
+            exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
+            if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
+                QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
+            else
+                QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. '.00 MHz', 'success')
+            end
+        elseif not radio then
+            QBCore.Functions.Notify(Config.messages['invalid_radio'], 'error')
+        end
+    end)
+end)
+
+RegisterNetEvent('qb-radio:client:JoinRadioChannel10', function(channel)
+    QBCore.Functions.TriggerCallback('qb-radio:radiocheck', function(radio)
+        if radio then
+            local channel = 10
+            RadioChannel = channel
+            exports["pma-voice"]:setRadioChannel(channel)
+            SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
+            if SplitStr(tostring(channel), ".")[2] ~= nil and SplitStr(tostring(channel), ".")[2] ~= "" then
+                QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. ' MHz', 'success')
+            else
+                QBCore.Functions.Notify(Config.messages['joined_to_radio'] ..channel.. '.00 MHz', 'success')
+            end
+        elseif not radio then
+            QBCore.Functions.Notify(Config.messages['invalid_radio'], 'error')
+        end
+    end)
+end)
+
+-- Added 08/17/2023 -rikmyr
+RegisterCommand('increaseradiochannel', function()
+    if not onRadio then return end
+    if RadioChannel < Config.MaxFrequency then
+        RadioChannel = RadioChannel + 1
+        if Config.Debug then print(string.format('^5Debug^7: Increased Radio Channel to %s', RadioChannel)) end
+        exports["pma-voice"]:setRadioChannel(RadioChannel)
+        SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
+        QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. RadioChannel, "success")
+    end
+end, false)
+
+RegisterKeyMapping('increaseradiochannel', 'Radio Increase Channel', 'keyboard', Config.KeyMapping.IncreaseRadioChannel)
+
+
+RegisterCommand('decreaseradiochannel', function()
+    if not onRadio then return end
+    if RadioChannel > 1 then
+        RadioChannel = RadioChannel - 1
+        if Config.Debug then print(string.format('^5Debug^7: Decreased Radio Channel to %s', RadioChannel)) end
+        exports["pma-voice"]:setRadioChannel(RadioChannel)
+        SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
+        QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. RadioChannel, "success")
+    end
+end, false)
+
+RegisterKeyMapping('decreaseradiochannel', 'Radio Decrease Channel', 'keyboard', Config.KeyMapping.DecreaseRadioChannel)
+
+
+RegisterCommand('increaseradiochanneldecimal', function()
+    if not onRadio then return end
+    if RadioChannel < Config.MaxFrequency then
+        RadioChannel = RadioChannel + 0.1
+        if Config.Debug then print(string.format('^5Debug^7: Increased Radio Channel Decimal to %s', RadioChannel)) end
+        exports["pma-voice"]:setRadioChannel(RadioChannel)
+        SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
+        QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. RadioChannel, "success")
+    end
+end, false)
+
+RegisterKeyMapping('increaseradiochanneldecimal', 'Radio Increase Channel Decimal', 'keyboard', Config.KeyMapping.IncreaseRadioChannelDecimal)
+
+
+RegisterCommand('decreaseradiochanneldecimal', function()
+    if not onRadio then return end
+    if RadioChannel > 0.1 then
+        RadioChannel = RadioChannel - 0.1
+        if Config.Debug then print(string.format('^5Debug^7: Decreased Radio Channel Decimal to %s', RadioChannel)) end
+        exports["pma-voice"]:setRadioChannel(RadioChannel)
+        SendNUIMessage({type = "radiochannel", radiochannel = tostring(RadioChannel)})
+        QBCore.Functions.Notify(Config.messages["increase_decrease_radio_channel"] .. RadioChannel, "success")
+    end
+end, false)
+
+RegisterKeyMapping('decreaseradiochanneldecimal', 'Radio Decrease Channel Decimal', 'keyboard', Config.KeyMapping.DecreaseRadioChannelDecimal)
