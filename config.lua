@@ -1,45 +1,116 @@
 Config = {}
 
-Config.keyBind = {
-    useRadio = "ENTER",
-    openRadio = "F7",
-    volUp1 = "PAGEUP",
-    radioVolDown = "PAGEDOWN"
-}
-
 Config.RestrictedChannels = {
     [1] = {
         police = true,
-        ambulance = true
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
     },
     [2] = {
         police = true,
-        ambulance = true
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
     },
     [3] = {
         police = true,
-        ambulance = true
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
     },
     [4] = {
         police = true,
-        ambulance = true
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
     },
     [5] = {
-        police = true
+        police = true,
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
     },
     [6] = {
-        police = true
+        police = true,
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
     },
     [7] = {
-        police = true
+        police = true,
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
     },
     [8] = {
-        police = true
+        police = true,
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
     },
     [9] = {
         police = true,
-        judge = true,
-        court = true
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
+    },
+    [10] = {
+        police = true,
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
+    },
+    [11] = {
+        hotshot = true,
+        police = true,
+        ambulance = true,
+        firefighter = true,
+        dispatch = true,
+        sast = true,
+        sagw = true,
+        bcso = true,
+        doc = true
     },
 }
 
@@ -49,7 +120,7 @@ Config.messages = {
     ["not_on_radio"] = "You're not connected to a signal",
     ["on_radio"] = "You're already connected to this signal",
     ["joined_to_radio"] = "You're connected to: ",
-    ["restricted_channel_error"] = "You are not allow to connect to this signal!",
+    ["restricted_channel_error"] = "You can not connect to this signal!",
     ["invalid_radio"] = "This frequency is not available.",
     ["you_on_radio"] = "You're already connected to this channel",
     ["you_leave"] = "You left the channel.",
